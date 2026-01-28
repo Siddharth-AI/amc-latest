@@ -1,0 +1,50 @@
+  [
+    {
+      "id": "pos-systems",
+      "name": "POS Systems",
+      "slug": "pos-systems",
+      "description": "Complete point of sale solutions for retail businesses",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80",
+      "productCount": 12
+    },
+    {
+      "id": "retail-solutions",
+      "name": "Retail Solutions",
+      "slug": "retail-solutions",
+      "description": "Comprehensive retail technology and management systems",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+      "productCount": 8
+    },
+    {
+      "id": "software",
+      "name": "Software",
+      "slug": "software",
+      "description": "Business management and inventory software solutions",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
+      "productCount": 15
+    },
+    {
+      "id": "hardware",
+      "name": "Hardware",
+      "slug": "hardware",
+      "description": "Quality hardware components and peripherals",
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=80",
+      "productCount": 20
+    },
+    {
+      "id": "support",
+      "name": "Support Services",
+      "slug": "support",
+      "description": "24/7 technical support and maintenance services",
+      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80",
+      "productCount": 5
+    },
+    {
+      "id": "custom",
+      "name": "Custom Solutions",
+      "slug": "custom",
+      "description": "Tailored business solutions designed for your needs",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+      "productCount": 10
+    }
+  ]

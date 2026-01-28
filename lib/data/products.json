@@ -1,0 +1,274 @@
+[
+  {
+    "id": "pos-terminal-advanced",
+    "name": "Advanced POS Terminal",
+    "slug": "pos-terminal-advanced",
+    "title": "Professional Point of Sale Terminal System",
+    "brand": "Premium",
+    "categoryId": "pos-systems",
+    "categorySlug": "pos-systems",
+    "description": "A comprehensive POS terminal solution designed for modern retail businesses. Features touch screen interface, integrated payment processing, and real-time inventory management.",
+    "shortDescription": "Professional POS terminal with touch screen and payment integration",
+    "price": 2499,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80"
+    ],
+    "keyFeatures": [
+      "15.6-inch touch screen display",
+      "Integrated card reader",
+      "Real-time inventory sync",
+      "Cloud-based reporting",
+      "Multi-user support",
+      "Receipt printer compatible"
+    ],
+    "specifications": {
+      "Display": "15.6-inch Touch Screen",
+      "Processor": "Intel Core i5",
+      "RAM": "8GB DDR4",
+      "Storage": "256GB SSD",
+      "Connectivity": "WiFi, Ethernet, USB",
+      "OS": "Windows 11 Pro",
+      "Dimensions": "40 x 30 x 15 cm",
+      "Weight": "8.5 kg"
+    },
+    "warranty": "1 Year Warranty"
+  },
+  {
+    "id": "retail-management-pro",
+    "name": "Retail Management System",
+    "slug": "retail-management-pro",
+    "title": "Complete Retail Management Solution",
+    "brand": "Enterprise",
+    "categoryId": "retail-solutions",
+    "categorySlug": "retail-solutions",
+    "description": "Comprehensive retail management system that handles inventory, sales, customer management, and reporting all in one platform.",
+    "shortDescription": "All-in-one retail management platform",
+    "price": 4999,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    ],
+    "keyFeatures": [
+      "Inventory management",
+      "Sales analytics",
+      "Customer database",
+      "Multi-store support",
+      "Cloud synchronization",
+      "Mobile app included"
+    ],
+    "specifications": {
+      "License Type": "Annual Subscription",
+      "Users": "Up to 10 users",
+      "Stores": "Unlimited stores",
+      "Cloud Storage": "50GB included",
+      "Support": "24/7 included",
+      "Updates": "Automatic updates"
+    },
+    "warranty": "1 Year Warranty"
+  },
+  {
+    "id": "mobile-pos-tablet",
+    "name": "Mobile POS Solution",
+    "slug": "mobile-pos-tablet",
+    "title": "Portable Tablet-Based POS System",
+    "brand": "Mobile",
+    "categoryId": "pos-systems",
+    "categorySlug": "pos-systems",
+    "description": "Lightweight, portable POS solution perfect for pop-up stores, food trucks, and mobile businesses. Runs on tablet with wireless card reader.",
+    "shortDescription": "Portable tablet POS for mobile businesses",
+    "price": 1299,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    ],
+    "keyFeatures": [
+      "10-inch tablet included",
+      "Wireless card reader",
+      "Battery life: 8+ hours",
+      "Offline mode support",
+      "Easy setup in minutes",
+      "Cloud sync when online"
+    ],
+    "specifications": {
+      "Tablet": "10-inch Android Tablet",
+      "Card Reader": "Wireless Bluetooth",
+      "Battery": "8+ hours continuous",
+      "Connectivity": "WiFi, 4G compatible",
+      "Storage": "64GB internal",
+      "Weight": "0.6 kg"
+    },
+    "warranty": "1 Year Warranty"
+  },
+  {
+    "id": "inventory-software",
+    "name": "Inventory Software",
+    "slug": "inventory-software",
+    "title": "Advanced Inventory Management Software",
+    "brand": "Software",
+    "categoryId": "software",
+    "categorySlug": "software",
+    "description": "Powerful inventory management software with barcode scanning, automated reordering, and comprehensive reporting features.",
+    "shortDescription": "Advanced inventory tracking and management",
+    "price": 899,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    ],
+    "keyFeatures": [
+      "Barcode scanning",
+      "Automated reordering",
+      "Multi-location support",
+      "Real-time stock levels",
+      "Detailed reporting",
+      "API integration"
+    ],
+    "specifications": {
+      "License": "Perpetual License",
+      "Users": "Unlimited users",
+      "Locations": "Unlimited locations",
+      "Items": "Unlimited items",
+      "Barcode Support": "All major formats",
+      "Reporting": "Advanced analytics"
+    },
+    "warranty": "1 Year Warranty"
+  },
+  {
+    "id": "payment-gateway",
+    "name": "Payment Gateway",
+    "slug": "payment-gateway",
+    "title": "Secure Payment Processing Gateway",
+    "brand": "Payment",
+    "categoryId": "hardware",
+    "categorySlug": "hardware",
+    "description": "Secure payment gateway supporting all major credit cards, contactless payments, and mobile wallet options.",
+    "shortDescription": "Secure multi-payment gateway solution",
+    "price": 599,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    ],
+    "keyFeatures": [
+      "All major cards supported",
+      "Contactless payments",
+      "Mobile wallet support",
+      "EMV chip compatible",
+      "PCI DSS compliant",
+      "Fast transaction processing"
+    ],
+    "specifications": {
+      "Card Types": "Credit, Debit, Prepaid",
+      "Payment Methods": "Chip, Contactless, Swipe",
+      "Mobile Wallets": "Apple Pay, Google Pay",
+      "Compliance": "PCI DSS Level 1",
+      "Speed": "< 2 seconds",
+      "Connectivity": "Ethernet, WiFi"
+    },
+    "warranty": "1 Year Warranty"
+  },
+  {
+    "id": "customer-display",
+    "name": "Customer Display",
+    "slug": "customer-display",
+    "title": "POS Customer Facing Display",
+    "brand": "Hardware",
+    "categoryId": "hardware",
+    "categorySlug": "hardware",
+    "description": "High-quality customer-facing display that shows transaction details, promotions, and enhances customer experience.",
+    "shortDescription": "Customer-facing display for POS systems",
+    "price": 399,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    ],
+    "keyFeatures": [
+      "15-inch LED display",
+      "HD resolution",
+      "Adjustable stand",
+      "Easy installation",
+      "Energy efficient",
+      "Wide viewing angle"
+    ],
+    "specifications": {
+      "Screen Size": "15 inches",
+      "Resolution": "1920 x 1080 HD",
+      "Display Type": "LED",
+      "Viewing Angle": "178 degrees",
+      "Power": "Low consumption",
+      "Mounting": "Stand or wall mount"
+    },
+    "warranty": "1 Year Warranty"
+  },
+  {
+    "id": "barcode-scanner",
+    "name": "Barcode Scanner",
+    "slug": "barcode-scanner",
+    "title": "Wireless Barcode Scanner",
+    "brand": "Hardware",
+    "categoryId": "hardware",
+    "categorySlug": "hardware",
+    "description": "Fast and accurate wireless barcode scanner compatible with all POS systems. Ergonomic design for extended use.",
+    "shortDescription": "Wireless barcode scanning solution",
+    "price": 299,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    ],
+    "keyFeatures": [
+      "Wireless connectivity",
+      "Fast scanning speed",
+      "Ergonomic design",
+      "Long battery life",
+      "Multiple barcode formats",
+      "Durable construction"
+    ],
+    "specifications": {
+      "Type": "2D Imager",
+      "Range": "Up to 50cm",
+      "Battery": "8+ hours",
+      "Connectivity": "Bluetooth, USB",
+      "Formats": "All major formats",
+      "Weight": "0.2 kg"
+    },
+    "warranty": "1 Year Warranty"
+  },
+  {
+    "id": "receipt-printer",
+    "name": "Receipt Printer",
+    "slug": "receipt-printer",
+    "title": "Thermal Receipt Printer",
+    "brand": "Hardware",
+    "categoryId": "hardware",
+    "categorySlug": "hardware",
+    "description": "Fast thermal receipt printer with quiet operation and high-quality print output. Perfect for retail environments.",
+    "shortDescription": "High-speed thermal receipt printer",
+    "price": 449,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    ],
+    "keyFeatures": [
+      "Thermal printing",
+      "Fast print speed",
+      "Quiet operation",
+      "Auto cutter",
+      "Paper saving mode",
+      "Easy paper loading"
+    ],
+    "specifications": {
+      "Print Speed": "250mm/s",
+      "Paper Width": "80mm",
+      "Resolution": "203 DPI",
+      "Interface": "USB, Ethernet",
+      "Noise Level": "< 50dB",
+      "Dimensions": "18 x 15 x 13 cm"
+    },
+    "warranty": "1 Year Warranty"
+  }
+]
+

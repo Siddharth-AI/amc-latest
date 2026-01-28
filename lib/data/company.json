@@ -1,0 +1,83 @@
+{
+  "story": "Founded in 2003, Al Marwah Computers (AMC Systems) began as a small technology solutions provider in Dubai, UAE. Our founders recognized the growing need for reliable point-of-sale systems in the rapidly expanding retail sector. Over the past two decades, we have grown from a local startup to a trusted enterprise partner, serving businesses across the United Arab Emirates. Our deep understanding of the UAE market, combined with our commitment to innovation and customer service, has made us a preferred choice for retail businesses seeking comprehensive POS solutions. Today, we continue to evolve with the industry, embracing cloud technologies and modern payment systems while maintaining our core values of reliability, trust, and long-term partnerships.",
+  "mission": "To empower businesses across the UAE with cutting-edge POS solutions that drive growth, enhance customer experience, and streamline operations. We are committed to providing reliable, scalable technology that adapts to our clients' evolving needs.",
+  "vision": "To be the leading POS solutions provider in the UAE, recognized for innovation, reliability, and exceptional customer service. We envision a future where every retail business in the region has access to world-class technology that enables their success.",
+  "values": [
+    "Reliability - We deliver solutions that businesses can depend on day after day",
+    "Innovation - We stay ahead of technology trends to offer the best solutions",
+    "Partnership - We build long-term relationships based on trust and mutual success",
+    "Excellence - We strive for excellence in every interaction and implementation",
+    "Integrity - We conduct business with honesty, transparency, and ethical practices"
+  ],
+  "timeline": [
+    {
+      "year": "2003",
+      "title": "Founded",
+      "description": "Al Marwah Computers was established in Dubai, UAE, with a vision to provide reliable POS solutions to local businesses."
+    },
+    {
+      "year": "2008",
+      "title": "Major Retail Partnerships",
+      "description": "Secured partnerships with leading retail chains across the UAE, establishing ourselves as a trusted technology partner."
+    },
+    {
+      "year": "2015",
+      "title": "Expansion Across UAE",
+      "description": "Expanded operations to serve clients throughout the United Arab Emirates, opening offices in key cities."
+    },
+    {
+      "year": "2020",
+      "title": "Cloud & Modern POS",
+      "description": "Launched cloud-based POS solutions and integrated modern payment technologies to meet evolving market demands."
+    },
+    {
+      "year": "Present",
+      "title": "Trusted Enterprise Provider",
+      "description": "Recognized as a leading POS solutions provider, serving over 1000 clients with comprehensive technology solutions and 24/7 support."
+    }
+  ],
+  "team": [
+    {
+      "id": "1",
+      "name": "Ahmed Al Marwah",
+      "role": "Founder & CEO",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "bio": "With over 20 years of experience in the technology sector, Ahmed founded AMC Systems with a vision to bring world-class POS solutions to the UAE market."
+    },
+    {
+      "id": "2",
+      "name": "Sarah Johnson",
+      "role": "Head of Sales",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+      "bio": "Sarah leads our sales team with a focus on understanding client needs and delivering tailored solutions that drive business success."
+    },
+    {
+      "id": "3",
+      "name": "Mohammed Hassan",
+      "role": "Technical Director",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+      "bio": "Mohammed oversees our technical operations, ensuring all implementations meet the highest standards of quality and reliability."
+    },
+    {
+      "id": "4",
+      "name": "Fatima Ali",
+      "role": "Customer Success Manager",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+      "bio": "Fatima ensures our clients receive exceptional support and that their POS systems continue to meet their evolving business needs."
+    }
+  ],
+  "certifications": [
+    "Microsoft Certified Partner",
+    "PCI DSS Compliant",
+    "ISO 9001:2015 Certified",
+    "UAE Trade License"
+  ],
+  "partnerships": [
+    "CASIO",
+    "Microsoft",
+    "HP",
+    "Intel",
+    "Samsung"
+  ]
+}
+
