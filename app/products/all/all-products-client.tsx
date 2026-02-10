@@ -25,7 +25,7 @@ import { fetchPublicCategories } from "@/store/slices/publicCategorySlice";
 export function AllProductsClient() {
   const dispatch = useAppDispatch();
   const { products, isLoading, error, pagination, filters } = useAppSelector(
-    (state) => state.publicProduct
+    (state) => state.publicProduct,
   );
   const { categories } = useAppSelector((state) => state.publicCategory);
 
@@ -37,7 +37,7 @@ export function AllProductsClient() {
   }, [dispatch]);
 
   useEffect(() => {
-    dispatch(fetchPublicProducts({ page, limit: 12, ...filters as any }));
+    dispatch(fetchPublicProducts({ page, limit: 12, ...(filters as any) }));
   }, [dispatch, page, filters]);
 
   const handlePageChange = (newPage: number) => {
@@ -193,7 +193,13 @@ export function AllProductsClient() {
               <ErrorMessage
                 message={error}
                 onRetry={() =>
-                  dispatch(fetchPublicProducts({ page, limit: 12, ...filters as any }))
+                  dispatch(
+                    fetchPublicProducts({
+                      page,
+                      limit: 12,
+                      ...(filters as any),
+                    }),
+                  )
                 }
               />
             ) : products?.length > 0 ? (
@@ -216,7 +222,7 @@ export function AllProductsClient() {
             ) : (
               <EmptyState
                 icon={Search}
-                title="No Products Found"
+                title="No Softwares Found"
                 description={
                   hasActiveFilters
                     ? "Try adjusting your search or filters"

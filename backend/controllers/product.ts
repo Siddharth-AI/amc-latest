@@ -36,7 +36,7 @@ export class ProductController {
         search,
         sort_by,
       });
-      return sendResponse(new Response(), 200, 'Products fetched successfully', result);
+      return sendResponse(new Response(), 200, 'Softwares fetched successfully', result);
     } catch (error: any) {
       return sendResponse(
         new Response(),

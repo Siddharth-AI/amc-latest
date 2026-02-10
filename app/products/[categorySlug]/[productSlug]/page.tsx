@@ -27,7 +27,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const { categorySlug, productSlug } = await params;
   const productUrl = `${SITE_URL}/products/${categorySlug}/${productSlug}`;
   const breadcrumbs = [
-    { name: "Products", url: `${SITE_URL}/products` },
+    { name: "Software", url: `${SITE_URL}/products` },
     { name: categorySlug, url: `${SITE_URL}/products/${categorySlug}` },
     { name: productSlug, url: productUrl },
   ];
@@ -46,9 +46,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <main>
-        <ProductDetailClient productSlug={productSlug} categorySlug={categorySlug} />
+        <ProductDetailClient
+          productSlug={productSlug}
+          categorySlug={categorySlug}
+        />
       </main>
     </>
   );
 }
-

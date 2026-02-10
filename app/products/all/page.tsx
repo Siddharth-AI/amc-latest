@@ -5,8 +5,9 @@ import { SITE_URL } from "@/lib/site-config";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "All Products - POS Systems & Solutions | AMC Systems",
-  description: "Browse our complete range of POS systems, retail solutions, and business technology products. Enterprise-grade solutions for your business needs.",
+  title: "All Softwares - POS Systems & Solutions | AMC Systems",
+  description:
+    "Browse our complete range of POS systems, retail solutions, and business technology Softwares. Enterprise-grade solutions for your business needs.",
   alternates: { canonical: `${SITE_URL}/products/all` },
   robots: { index: true, follow: true },
 };

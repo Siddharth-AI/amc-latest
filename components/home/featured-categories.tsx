@@ -130,7 +130,7 @@ export function FeaturedCategories() {
           {/* Floating Badge */}
           <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full glass-strong border border-primary/20 text-xs sm:text-sm font-semibold text-primary mb-3 sm:mb-4 shadow-lg hover:shadow-glow transition-all duration-300 group">
             <Sparkles className="h-3 w-3 sm:h-4 sm:w-4 group-hover:rotate-12 transition-transform" />
-            <span>Explore Our Product Categories</span>
+            <span>Explore Our Software Categories</span>
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-primary animate-pulse" />
           </div>
 
@@ -184,17 +184,27 @@ export function FeaturedCategories() {
           {/* Stats Bar */}
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 pt-6 sm:pt-8">
             <div className="text-center">
-              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-navy-500">60+</div>
-              <div className="text-xs sm:text-sm text-text-muted">Products</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-navy-500">
+                60+
+              </div>
+              <div className="text-xs sm:text-sm text-text-muted">
+                Softwares
+              </div>
             </div>
             <div className="w-px h-8 sm:h-10 md:h-12 bg-border" />
             <div className="text-center">
-              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-navy-500">6</div>
-              <div className="text-xs sm:text-sm text-text-muted">Categories</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-navy-500">
+                6
+              </div>
+              <div className="text-xs sm:text-sm text-text-muted">
+                Categories
+              </div>
             </div>
             <div className="w-px h-8 sm:h-10 md:h-12 bg-border" />
             <div className="text-center">
-              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-navy-500">24/7</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold text-navy-500">
+                24/7
+              </div>
               <div className="text-xs sm:text-sm text-text-muted">Support</div>
             </div>
           </div>
@@ -251,7 +261,7 @@ export function FeaturedCategories() {
                     {/* Product Count Badge */}
                     <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
                       <Badge className="bg-white/90 backdrop-blur-md text-navy-600 font-bold shadow-lg border border-white/30 px-2 sm:px-3 py-1 text-xs">
-                        {category.productCount} Products
+                        {category.productCount} Softwares
                       </Badge>
                     </div>
 
@@ -259,7 +269,9 @@ export function FeaturedCategories() {
                     <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4">
                       <div
                         className={`w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl ${category.bgColor} backdrop-blur-md flex items-center justify-center border border-white/40 shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-6`}>
-                        <Icon className={`h-6 w-6 sm:h-8 sm:w-8 ${category.iconColor}`} />
+                        <Icon
+                          className={`h-6 w-6 sm:h-8 sm:w-8 ${category.iconColor}`}
+                        />
                       </div>
                     </div>
 

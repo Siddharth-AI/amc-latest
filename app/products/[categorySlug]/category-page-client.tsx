@@ -70,7 +70,7 @@ export function CategoryPageClient({ categorySlug }: CategoryPageClientProps) {
         limit: 12,
         search: searchQuery,
         sort_by: sortBy,
-      })
+      }),
     );
   }, [dispatch, categorySlug, page, searchQuery, sortBy]);
 
@@ -99,7 +99,7 @@ export function CategoryPageClient({ categorySlug }: CategoryPageClientProps) {
   const categoryImage = selectedCategory
     ? getCategoryImageUrl(
         selectedCategory.base_url,
-        selectedCategory.img_name
+        selectedCategory.img_name,
       ) || "/placeholder.png"
     : "/placeholder.png";
 
@@ -108,7 +108,7 @@ export function CategoryPageClient({ categorySlug }: CategoryPageClientProps) {
       {/* Sticky Back Button - Adjusts position based on header visibility */}
       <StickyBackButton
         backHref="/products"
-        backLabel="All Products"
+        backLabel="All Softwares"
         productCount={productsPagination.total}
       />
 
@@ -194,7 +194,7 @@ export function CategoryPageClient({ categorySlug }: CategoryPageClientProps) {
             <div className="flex items-center justify-between mb-4 sm:mb-6 md:mb-8">
               <div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-navy-900 mb-2">
-                  {hasActiveFilters ? "Search Results" : "All Products"}
+                  {hasActiveFilters ? "Search Results" : "All Softwares"}
                 </h2>
                 <p className="text-sm sm:text-base text-slate-600">
                   {productsPagination.total} product
@@ -261,7 +261,7 @@ export function CategoryPageClient({ categorySlug }: CategoryPageClientProps) {
                       limit: 12,
                       search: searchQuery,
                       sort_by: sortBy,
-                    })
+                    }),
                   )
                 }
               />
@@ -285,7 +285,7 @@ export function CategoryPageClient({ categorySlug }: CategoryPageClientProps) {
             ) : (
               <EmptyState
                 icon={Search}
-                title="No Products Found"
+                title="No Softwares Found"
                 description={
                   hasActiveFilters
                     ? "Try adjusting your search"
@@ -295,7 +295,7 @@ export function CategoryPageClient({ categorySlug }: CategoryPageClientProps) {
                   hasActiveFilters
                     ? { label: "Clear Filters", onClick: clearFilters }
                     : {
-                        label: "Browse All Products",
+                        label: "Browse All Softwares",
                         onClick: () => (window.location.href = "/products"),
                       }
                 }

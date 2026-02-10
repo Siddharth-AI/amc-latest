@@ -160,7 +160,7 @@ export function FeaturedProducts() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
   const scrollTo = useCallback(
     (index: number) => emblaApi?.scrollTo(index),
-    [emblaApi]
+    [emblaApi],
   );
 
   return (
@@ -342,7 +342,7 @@ export function FeaturedProducts() {
           <div className="md:hidden w-full px-4">
             <Link href="/products" className="block w-full">
               <Button className="w-full rounded-xl py-6 font-bold text-lg shadow-lg shadow-primary/20">
-                Explore All Products
+                Explore All Softwares
               </Button>
             </Link>
           </div>

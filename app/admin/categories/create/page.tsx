@@ -2,25 +2,25 @@
  * Create Category Page
  */
 
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-import { ProtectedRoute } from '@/components/admin/ProtectedRoute';
-import { SlugInput } from '@/components/admin/SlugInput';
-import { useAppDispatch } from '@/store/hooks';
-import { createCategory } from '@/store/slices/categorySlice';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { toast } from 'sonner';
-import { ArrowLeft, Upload } from 'lucide-react';
-import Link from 'next/link';
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { ProtectedRoute } from "@/components/admin/ProtectedRoute";
+import { SlugInput } from "@/components/admin/SlugInput";
+import { useAppDispatch } from "@/store/hooks";
+import { createCategory } from "@/store/slices/categorySlice";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
+import { ArrowLeft, Upload } from "lucide-react";
+import Link from "next/link";
 
 const categorySchema = z.object({
-  name: z.string().min(1, 'Name is required'),
+  name: z.string().min(1, "Name is required"),
   title: z.string().optional(),
 });
 
@@ -29,7 +29,7 @@ type CategoryFormData = z.infer<typeof categorySchema>;
 export default function CreateCategoryPage() {
   const router = useRouter();
   const dispatch = useAppDispatch();
-  const [slug, setSlug] = useState('');
+  const [slug, setSlug] = useState("");
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -43,7 +43,7 @@ export default function CreateCategoryPage() {
     resolver: zodResolver(categorySchema),
   });
 
-  const nameValue = watch('name', '');
+  const nameValue = watch("name", "");
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -61,22 +61,22 @@ export default function CreateCategoryPage() {
     setIsSubmitting(true);
     try {
       const formData = new FormData();
-      formData.append('name', data.name);
+      formData.append("name", data.name);
       if (data.title) {
-        formData.append('title', data.title);
+        formData.append("title", data.title);
       }
       if (slug) {
-        formData.append('slug', slug);
+        formData.append("slug", slug);
       }
       if (imageFile) {
-        formData.append('image', imageFile);
+        formData.append("image", imageFile);
       }
 
       await dispatch(createCategory(formData)).unwrap();
-      toast.success('Category created successfully!');
-      router.push('/admin/categories');
+      toast.success("Category created successfully!");
+      router.push("/admin/categories");
     } catch (error: any) {
-      toast.error(error || 'Failed to create category');
+      toast.error(error || "Failed to create category");
     } finally {
       setIsSubmitting(false);
     }
@@ -88,39 +88,50 @@ export default function CreateCategoryPage() {
         <div className="mb-4 sm:mb-6">
           <Link
             href="/admin/categories"
-            className="inline-flex items-center text-primary-600 hover:text-primary-700 mb-3 sm:mb-4 text-sm sm:text-base"
-          >
+            className="inline-flex items-center text-primary-600 hover:text-primary-700 mb-3 sm:mb-4 text-sm sm:text-base">
             <ArrowLeft size={16} className="sm:w-5 sm:h-5 mr-1 sm:mr-2" />
             Back to Categories
           </Link>
-          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-navy-900 mb-1 sm:mb-2">Create New Category</h1>
-          <p className="text-xs sm:text-sm lg:text-base text-gray-600">Add a new product category</p>
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-navy-900 mb-1 sm:mb-2">
+            Create New Category
+          </h1>
+          <p className="text-xs sm:text-sm lg:text-base text-gray-600">
+            Add a new software category
+          </p>
         </div>
 
         <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 lg:p-6 border border-gray-200">
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="space-y-4 sm:space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700 mb-2">
                 Name <span className="text-red-500">*</span>
               </label>
               <Input
                 id="name"
-                {...register('name')}
-                className={errors.name ? 'border-red-500' : ''}
+                {...register("name")}
+                className={errors.name ? "border-red-500" : ""}
                 placeholder="Category name"
               />
               {errors.name && (
-                <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
+                <p className="mt-1 text-sm text-red-600">
+                  {errors.name.message}
+                </p>
               )}
             </div>
 
             <div>
-              <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-2">
+              <label
+                htmlFor="title"
+                className="block text-sm font-medium text-gray-700 mb-2">
                 Title
               </label>
               <Input
                 id="title"
-                {...register('title')}
+                {...register("title")}
                 placeholder="Category title (optional)"
               />
             </div>
@@ -134,16 +145,17 @@ export default function CreateCategoryPage() {
             />
 
             <div>
-              <label htmlFor="image" className="block text-sm font-medium text-gray-700 mb-2">
+              <label
+                htmlFor="image"
+                className="block text-sm font-medium text-gray-700 mb-2">
                 Image
               </label>
               <div className="mt-1 flex items-center gap-4">
                 <label
                   htmlFor="image"
-                  className="cursor-pointer inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
-                >
+                  className="cursor-pointer inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
                   <Upload size={20} className="mr-2" />
-                  {imageFile ? 'Change Image' : 'Upload Image'}
+                  {imageFile ? "Change Image" : "Upload Image"}
                 </label>
                 <input
                   id="image"
@@ -171,9 +183,8 @@ export default function CreateCategoryPage() {
               <Button
                 type="submit"
                 className="bg-primary-500 hover:bg-primary-600 text-white"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Creating...' : 'Create Category'}
+                disabled={isSubmitting}>
+                {isSubmitting ? "Creating..." : "Create Category"}
               </Button>
               <Link href="/admin/categories">
                 <Button type="button" variant="outline">
@@ -187,4 +198,3 @@ export default function CreateCategoryPage() {
     </ProtectedRoute>
   );
 }
-

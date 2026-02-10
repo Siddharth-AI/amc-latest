@@ -12,16 +12,24 @@ interface CategoryCardProps {
 }
 
 const categoryImages: Record<string, string> = {
-  "pos-systems": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80",
-  "retail-solutions": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
-  "software": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
-  "hardware": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=80",
-  "support": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80",
-  "custom": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+  "pos-systems":
+    "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80",
+  "retail-solutions":
+    "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+  software:
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
+  hardware:
+    "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=80",
+  support:
+    "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80",
+  custom:
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
 };
 
 export function CategoryCard({ category }: CategoryCardProps) {
-  const imageUrl = categoryImages[category.slug] || "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80";
+  const imageUrl =
+    categoryImages[category.slug] ||
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80";
 
   return (
     <div className="card-hover">
@@ -37,7 +45,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
             <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute top-4 right-4">
               <Badge variant="accent" className="bg-white/90 text-primary">
-                {category.productCount} Products
+                {category.productCount} Software
               </Badge>
             </div>
           </div>

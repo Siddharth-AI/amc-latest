@@ -32,7 +32,7 @@ export default function BlogDetailPage() {
   const slug = params.slug as string;
   const dispatch = useAppDispatch();
   const { selectedBlog, loading, error } = useAppSelector(
-    (state) => state.publicBlog
+    (state) => state.publicBlog,
   );
 
   useEffect(() => {
@@ -149,19 +149,19 @@ export default function BlogDetailPage() {
                         .replace(/<\/p>/g, "</p><br/>")
                         .replace(
                           /<pre>/g,
-                          '<pre style="background: #f3f4f6; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;">'
+                          '<pre style="background: #f3f4f6; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;">',
                         )
                         .replace(
                           /<code>/g,
-                          '<code style="background: #e5e7eb; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem;">'
+                          '<code style="background: #e5e7eb; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem;">',
                         )
                         .replace(
                           /<blockquote>/g,
-                          '<blockquote style="border-left: 4px solid #d1d5db; padding-left: 1rem; margin: 1rem 0; font-style: italic; color: #6b7280;">'
+                          '<blockquote style="border-left: 4px solid #d1d5db; padding-left: 1rem; margin: 1rem 0; font-style: italic; color: #6b7280;">',
                         )
                         .replace(
                           /<hr>/g,
-                          '<hr style="margin: 1.5rem 0; border-color: #d1d5db;"/>'
+                          '<hr style="margin: 1.5rem 0; border-color: #d1d5db;"/>',
                         ),
                     }}
                   />
@@ -203,7 +203,7 @@ export default function BlogDetailPage() {
                     <div className="flex items-center gap-3">
                       <a
                         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                          `https://amcsystems.ae/news/${slug}`
+                          `https://amcsystems.ae/news/${slug}`,
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -213,7 +213,7 @@ export default function BlogDetailPage() {
                       </a>
                       <a
                         href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-                          `https://amcsystems.ae/news/${slug}`
+                          `https://amcsystems.ae/news/${slug}`,
                         )}&text=${encodeURIComponent(selectedBlog.title)}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -223,7 +223,7 @@ export default function BlogDetailPage() {
                       </a>
                       <a
                         href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-                          `https://amcsystems.ae/news/${slug}`
+                          `https://amcsystems.ae/news/${slug}`,
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -266,7 +266,7 @@ export default function BlogDetailPage() {
                       <Link
                         href="/products"
                         className="block text-sm text-slate-600 hover:text-primary-600 transition-colors">
-                        Our Products
+                        Our Software
                       </Link>
                       <Link
                         href="/contact"

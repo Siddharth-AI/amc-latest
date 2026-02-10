@@ -12,10 +12,10 @@ interface StickyBackButtonProps {
   productCount?: number;
 }
 
-export function StickyBackButton({ 
-  backHref, 
+export function StickyBackButton({
+  backHref,
   backLabel,
-  productCount 
+  productCount,
 }: StickyBackButtonProps) {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const lastScrollYRef = useRef(0);
@@ -43,9 +43,8 @@ export function StickyBackButton({
     <div
       className={cn(
         "sticky z-[1000] bg-white border-b border-slate-200 shadow-sm transition-all duration-300",
-        isHeaderVisible ? "top-16" : "top-0"
-      )}
-    >
+        isHeaderVisible ? "top-16" : "top-0",
+      )}>
       <Container>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between py-3 sm:py-4">
@@ -55,8 +54,7 @@ export function StickyBackButton({
               className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-navy-900 hover:text-primary-600 transition-colors group touch-manipulation relative z-[100] pointer-events-auto"
               onClick={(e) => {
                 e.stopPropagation();
-              }}
-            >
+              }}>
               <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-primary-100 flex items-center justify-center transition-colors pointer-events-none">
                 <ArrowLeft className="w-4 h-4 text-navy-900 group-hover:text-primary-600 group-hover:-translate-x-0.5 transition-transform" />
               </div>
@@ -68,7 +66,7 @@ export function StickyBackButton({
               <div className="flex items-center gap-2 text-xs sm:text-sm">
                 <Package className="w-4 h-4 text-slate-600" />
                 <span className="font-bold text-navy-900">
-                  {productCount} Products
+                  {productCount} Softwares
                 </span>
               </div>
             )}
@@ -78,4 +76,3 @@ export function StickyBackButton({
     </div>
   );
 }
-

@@ -97,14 +97,14 @@ const CategoryCard = memo(
         {/* Category Image */}
         <div className="relative w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden bg-gray-50">
           {imageUrl && (
-          <Image
-            src={imageUrl}
-            alt={category.name}
-            fill
-            className="object-cover group-hover:scale-110 transition-transform duration-500"
-            sizes="64px"
-            unoptimized
-          />
+            <Image
+              src={imageUrl}
+              alt={category.name}
+              fill
+              className="object-cover group-hover:scale-110 transition-transform duration-500"
+              sizes="64px"
+              unoptimized
+            />
           )}
         </div>
 
@@ -131,7 +131,7 @@ const CategoryCard = memo(
         </div>
       </Link>
     );
-  }
+  },
 );
 CategoryCard.displayName = "CategoryCard";
 
@@ -169,11 +169,11 @@ const CategoryList = memo(
           href="/products"
           onClick={onClose}
           className="block px-4 py-2 text-sm font-semibold text-primary-500 hover:bg-primary-50 rounded-lg transition-colors">
-          View All Products →
+          View All Softwares →
         </Link>
       </div>
     );
-  }
+  },
 );
 CategoryList.displayName = "CategoryList";
 
@@ -247,7 +247,7 @@ const MegaMenu = memo(
                   onClick={onClose}
                   className="inline-flex items-center gap-2 text-sm font-semibold transition-colors group"
                   style={{ color: "var(--color-primary)" }}>
-                  View All Products
+                  View All Softwares
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
               </div>
@@ -256,7 +256,7 @@ const MegaMenu = memo(
         </div>
       </>
     );
-  }
+  },
 );
 MegaMenu.displayName = "MegaMenu";
 
@@ -323,7 +323,7 @@ const MobileMenu = memo(
                           "block px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl text-base sm:text-lg font-serif font-semibold transition-colors",
                           pathname === item.href
                             ? "text-white"
-                            : "hover:bg-primary-50"
+                            : "hover:bg-primary-50",
                         )}
                         style={{
                           backgroundColor:
@@ -345,7 +345,7 @@ const MobileMenu = memo(
                           "block px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl text-base sm:text-lg font-serif font-semibold transition-colors",
                           pathname === item.href
                             ? "text-white"
-                            : "hover:bg-primary-50"
+                            : "hover:bg-primary-50",
                         )}
                         style={{
                           backgroundColor:
@@ -387,7 +387,7 @@ const MobileMenu = memo(
         </div>
       </div>
     );
-  }
+  },
 );
 MobileMenu.displayName = "MobileMenu";
 
@@ -404,7 +404,7 @@ export function Header() {
   const pathname = usePathname();
   const dispatch = useAppDispatch();
   const { categories: apiCategories } = useAppSelector(
-    (state) => state.publicCategory
+    (state) => state.publicCategory,
   );
 
   // Fetch categories on mount
@@ -468,7 +468,7 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-[100] transition-all duration-500",
-        isVisible ? "translate-y-0" : "-translate-y-full"
+        isVisible ? "translate-y-0" : "-translate-y-full",
       )}
       style={{
         backgroundColor: isScrolled
@@ -492,7 +492,7 @@ export function Header() {
                       "flex items-center gap-1 px-3 py-2 rounded-lg text-xs sm:text-sm font-roboto font-semibold transition-colors",
                       pathname.startsWith(item.href)
                         ? "bg-primary-50"
-                        : "hover:bg-primary-50"
+                        : "hover:bg-primary-50",
                     )}
                     style={{
                       color: pathname.startsWith(item.href)
@@ -503,7 +503,7 @@ export function Header() {
                     <ChevronDown
                       className={cn(
                         "w-3 h-3 sm:w-4 sm:h-4 transition-transform",
-                        menuState === "products" && "rotate-180"
+                        menuState === "products" && "rotate-180",
                       )}
                     />
                   </button>
@@ -514,7 +514,7 @@ export function Header() {
                       "block px-3 py-2 rounded-lg text-xs sm:text-sm font-roboto font-semibold transition-colors",
                       pathname === item.href
                         ? "bg-primary-50"
-                        : "hover:bg-primary-50"
+                        : "hover:bg-primary-50",
                     )}
                     style={{
                       color:

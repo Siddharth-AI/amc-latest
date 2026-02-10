@@ -27,7 +27,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const { categorySlug } = await params;
   const categoryUrl = `${SITE_URL}/products/${categorySlug}`;
   const breadcrumbs = [
-    { name: "Products", url: `${SITE_URL}/products` },
+    { name: "Softwares", url: `${SITE_URL}/products` },
     { name: categorySlug, url: categoryUrl },
   ];
 
@@ -50,4 +50,3 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     </>
   );
 }
-

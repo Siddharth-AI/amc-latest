@@ -34,7 +34,7 @@ const heroSlides: HeroSlide[] = [
     image:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80&auto=format&fit=crop",
     cta: {
-      primary: { text: "Explore Products", href: "/products" },
+      primary: { text: "Explore Softwares", href: "/products" },
       secondary: { text: "Get Free Quote", href: "/contact" },
     },
     // stats: [
@@ -54,7 +54,7 @@ const heroSlides: HeroSlide[] = [
       "https://images.unsplash.com/photo-1556740772-1a741367b93e?w=1920&q=80&auto=format&fit=crop",
     cta: {
       primary: {
-        text: "View ECR Products",
+        text: "View ECR Softwares",
         href: "/products/ecr-electronic-cash-register",
       },
       secondary: { text: "Request Demo", href: "/contact" },
@@ -105,7 +105,7 @@ export function HeroSection() {
       gsap.fromTo(
         contentRef.current.children,
         { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: "power2.out" }
+        { opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: "power2.out" },
       );
     }
   }, [emblaApi]);
@@ -121,7 +121,7 @@ export function HeroSection() {
 
   const scrollTo = useCallback(
     (index: number) => emblaApi?.scrollTo(index),
-    [emblaApi]
+    [emblaApi],
   );
 
   return (
@@ -262,7 +262,7 @@ export function HeroSection() {
                     "h-1.5 sm:h-2 rounded-full transition-all duration-300",
                     index === selectedIndex
                       ? "w-8 sm:w-12 bg-primary-500"
-                      : "w-1.5 sm:w-2 bg-white/40 hover:bg-white/60"
+                      : "w-1.5 sm:w-2 bg-white/40 hover:bg-white/60",
                   )}
                   aria-label={`Go to slide ${index + 1}`}
                 />
